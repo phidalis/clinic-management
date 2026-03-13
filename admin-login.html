@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - MediCare Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin-login.css">
+</head>
+<body>
+    <div class="admin-login-container">
+        <!-- Background Illustration -->
+        <div class="admin-illustration">
+            <div class="illustration-content">
+                <div class="floating-icons">
+                    <i class="fas fa-hospital-alt"></i>
+                    <i class="fas fa-user-md"></i>
+                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-calendar-check"></i>
+                    <i class="fas fa-file-invoice"></i>
+                </div>
+                <div class="illustration-text">
+                    <h2>Healthcare Administration</h2>
+                    <p>Complete control over your clinic operations</p>
+                    <div class="stats-mini">
+                        <div class="stat-mini-item">
+                            <span class="stat-mini-value">500+</span>
+                            <span class="stat-mini-label">Clinics</span>
+                        </div>
+                        <div class="stat-mini-item">
+                            <span class="stat-mini-value">50k+</span>
+                            <span class="stat-mini-label">Patients</span>
+                        </div>
+                        <div class="stat-mini-item">
+                            <span class="stat-mini-value">24/7</span>
+                            <span class="stat-mini-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="admin-login-form-container">
+            <div class="admin-login-card">
+                <div class="admin-logo">
+                    <i class="fas fa-hospital-alt"></i>
+                    <span>MediCare<span class="pro">Pro</span></span>
+                    <span class="admin-badge">Administrator</span>
+                </div>
+
+                <h2>Admin Portal Login</h2>
+                <p class="login-subtitle">Secure access for clinic administrators</p>
+
+                <form id="adminLoginForm">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="adminEmail" placeholder="Admin Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="adminPassword" placeholder="Password" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="admin-login-btn">
+                        <span>Login to Dashboard</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div class="security-notice">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure 256-bit SSL Encryption</span>
+                    </div>
+
+                    <div class="back-to-home">
+                        <a href="home.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                    </div>
+                </form>
+
+                <div class="admin-contact">
+                    <p>Need help? Contact IT Support</p>
+                    <a href="tel:18005551234"><i class="fas fa-phone"></i> 1-800-555-1234</a>
+                    <a href="mailto:support@medicarepro.com"><i class="fas fa-envelope"></i> support@medicarepro.com</a>
+                </div>
+            </div>
+
+            <!-- Demo Credentials Card -->
+            <div class="demo-credentials">
+                <div class="demo-header">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Demo Credentials</span>
+                </div>
+                <div class="demo-content">
+                    <div class="demo-row">
+                        <span class="demo-label">Email:</span>
+                        <span class="demo-value">admin@medicarepro.com</span>
+                    </div>
+                    <div class="demo-row">
+                        <span class="demo-label">Password:</span>
+                        <span class="demo-value">admin123</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="adminSuccessModal" class="admin-modal">
+        <div class="admin-modal-content">
+            <div class="admin-modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Authentication Successful!</h3>
+            <p>Redirecting to admin dashboard...</p>
+            <div class="admin-modal-loader"></div>
+        </div>
+    </div>
+
+    <script src="admin-login.js"></script>
+</body>
+</html>
